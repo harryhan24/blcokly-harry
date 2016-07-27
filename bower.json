@@ -1,0 +1,26 @@
+{
+  "name": "blockly",
+  "description": "harry's blockly",
+  "main": "index.js",
+  "authors": [
+    "harry"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/harryhan24/blcokly-harry",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "install":{
+    "path":{
+      "css":"static/css",
+      "js" : "static/js"
+    }
+  }
+}
