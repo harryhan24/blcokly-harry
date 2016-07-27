@@ -1,0 +1,17 @@
+{
+  "name": "blockly",
+  "version": "1.0.0",
+  "description": "harry's blockly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "harry",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.2.0",
+    "live-server": "^1.0.0"
+  }
+}
