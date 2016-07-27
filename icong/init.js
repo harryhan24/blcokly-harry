@@ -1,6 +1,4 @@
-/**
- * Created by harryhan on 2016. 7. 27..
- */
+
 Blockly.inject(document.getElementById('blocklyDiv'),
     {toolbox: document.getElementById('toolbox')});
 Blockly.Xml.domToWorkspace(Blockly.mainWorkspace,
@@ -24,6 +22,16 @@ function initApi(interpreter, scope) {
     };
     interpreter.setProperty(scope, 'prompt',
         interpreter.createNativeFunction(wrapper));
+
+    // Add an API function for the moveShip() block.
+    var wrapper = function(text) {
+        text = text ? text.toString() : '';
+        return interpreter.createPrimitive(moveShip(text));
+    };
+    interpreter.setProperty(scope, 'moveShip',
+        interpreter.createNativeFunction(wrapper));
+
+
 
     // Add an API function for highlighting blocks.
     var wrapper = function(id) {

@@ -3,7 +3,7 @@
  */
 Blockly.JavaScript['gofoarward'] = function(block) {
     // let BJS = Blockly.JavaScript;
-    var code = "alert('aaa');";
+    var code = "moveShip();";
     return code;
 };
 

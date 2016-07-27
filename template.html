@@ -5,12 +5,39 @@
     <title>Blockly Demo: JS Interpreter</title>
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- write your code here -->
+    $CENTER_STYLE
+    $CREATEJS_LIBRARY_SCRIPTS
+    $ANIMATE_CC_SCRIPTS
+    $SCRIPT_START
+    var canvas, stage, exportRoot;
+    function init() {
+    canvas = document.getElementById("$CANVAS_ID");
+    $CREATE_LOADER
+    $LOAD_MANIFEST
+    }
+    $HANDLE_FILE_LOAD_START
+    $HANDLE_FILE_LOAD_BODY
+    $HANDLE_FILE_LOAD_END
+    $HANDLE_COMPLETE_START
+    //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+    $CREATE_STAGE
+    //Registers the "tick" event listener.
+    $START_ANIMATION
+    //Code to support hidpi screens and responsive scaling.
+    $RESP_HIDPI
+    $HANDLE_COMPLETE_END
+    $PLAYSOUND
+    $SCRIPT_END
+    <!-- write your code here -->
+
 </head>
-<body>
+<body onload="init();">
 
 <div class="row">
     <div class="col-md-6">
-sss
+        <canvas id="$CANVAS_ID" width="$WT" height="$HT" style="display: $CANVAS_DISP; background-color:$BG"></canvas>
+        $PRELOADER_DIV
     </div>
 
     <div class="col-md-6">
